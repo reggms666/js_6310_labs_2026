@@ -26,7 +26,10 @@ function simpleTask() {
 // ===== ЗАДАНИЕ 2: Функции =====
 function getReviewerNumber(number, lab) {
     // 2.1 Функция определяющая номер ревьюера для вашей группы
-    return (number + lab);
+    let students = 30
+    let sum = number + lab
+    let rev = sum % students
+    return rev;
 }
 
 function getVariant(number, variants) {
@@ -122,7 +125,28 @@ const student = {
     },
 
     addGrade(subject, grade) {
+        if (typeof subject !== "string" || subject.trim() === "") {
+            console.log("Ошибка: название предмета не может быть пустым");
+            return false;
+        }
+
+        if (typeof grade !== "number" || isNaN(grade)) {
+            console.log("Ошибка: оценка должна быть числом");
+            return false;
+        }
+
+        if (grade < 0) {
+            console.log("Ошибка: оценка не может быть отрицательной");
+            return false;
+        }
+
+        if (grade > 100) {
+            console.log("Ошибка: оценка не может быть больше 100");
+            return false;
+        }
+
         this.grades[subject] = grade;
+        return true;
     }
 };
 
