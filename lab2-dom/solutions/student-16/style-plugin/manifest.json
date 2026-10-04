@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "KAI to CYBERPUNK",
+  "name": "KAI to SUMMER",
   "version": "1.0",
-  "description": "Добавляет кнопку для переключения неоновой темы Cyberpunk / Neon Noir",
-  "permissions": ["activeTab"],
+  "description": "Добавляет кнопку для переключения летнего (яркого) режима на сайте kai.ru",
+  "permissions": [
+    "activeTab"
+  ],
   "content_scripts": [
     {
       "matches": ["https://kai.ru/*"],

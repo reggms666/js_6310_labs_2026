@@ -62,27 +62,6 @@ Cyberpunk / Neon Noir Plugin for kai.ru
 Структура проекта
 style-plugin/
 ├── manifest.json # Описание расширения
-├── content.js # Логика плагина (создание кнопки, переключение, localStorage)
-├── style.css # Все стили Cyberpunk / Neon Noir
+├── content.js # Логика плагина + css
 ├── readme.md # Документация
 └── images/
-
-
-Технологии и методы
-
-JavaScript:
-- `document.getElementById()` — поиск элементов по ID
-- `document.querySelector()` — поиск по CSS-селектору
-- `document.querySelectorAll()` — поиск нескольких элементов
-- `element.parentElement` — родительский элемент
-- `element.children` — дочерние элементы
-- `localStorage` — сохранение состояния плагина
-- Сложный CSS-селектор с двумя классами: `.news_box.active, .card.highlight`
-
-CSS:
-- CSS-переменные цвета и градиенты
-- `text-shadow` — эффекты неонового свечения
-- `box-shadow` — свечение вокруг элементов
-- `repeating-linear-gradient` — эффект сканлайнов
-- `transition` — плавные анимации
-- Класс `.cyberpunk-mode` — вместо inline-стилей
