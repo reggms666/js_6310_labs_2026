@@ -67,6 +67,10 @@ export function createBot(token = config.telegramToken) {
 
   // Inline-кнопки: режим, тема, варианты ответа, отмена
   bot.on('callback_query', async (query) => {
+    if (!query.from || !query.message || !query.message.chat) {
+      await bot.answerCallbackQuery(query.id).catch(() => {});
+      return;
+    }
     const userId = query.from.id;
     const chatId = query.message.chat.id;
     const data = query.data || '';
