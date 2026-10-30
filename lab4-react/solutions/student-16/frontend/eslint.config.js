@@ -32,6 +32,8 @@ export default tseslint.config(
       'semi': ['error', 'never'],
       'quotes': ['error', 'single'],
       'padded-blocks': ['error', 'never'],
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
+      'padded-blocks': ['error', 'never'],
       'padding-line-between-statements': [
         'error',
         { blankLine: 'always', prev: '*', next: 'return' },
