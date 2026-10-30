@@ -1,8 +1,10 @@
 import { useState } from 'react'
+
 import { QuestionCard, Scoreboard } from 'ui-library'
-import type { ScoreRecord, GameMode } from 'ui-library'
 
 import { questions, initialScoreRecords } from './data/mockData'
+
+import type { ScoreRecord, GameMode } from 'ui-library'
 
 import './App.css'
 

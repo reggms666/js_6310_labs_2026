@@ -1,9 +1,9 @@
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-import type { ScoreRecord } from '../types'
-
 import Scoreboard from './Scoreboard'
+
+import type { ScoreRecord } from '../types'
 
 const records: ScoreRecord[] = [
   { id: '1', player: 'Alice', score: 100, mode: 'classic' },

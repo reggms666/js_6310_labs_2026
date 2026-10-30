@@ -45,7 +45,7 @@ describe('App', () => {
     await userEvent.click(screen.getByRole('button', { name: /Следующий вопрос/i }))
 
     await userEvent.click(screen.getByText('Азот'))
-   
+
     const nextButton = screen.getByRole('button', { name: /Следующий вопрос/i })
 
     await userEvent.click(nextButton)
@@ -68,7 +68,7 @@ describe('App', () => {
     expect(screen.getByText(/Ваш результат:/)).toBeInTheDocument()
 
     expect(screen.getByText('Таблица рекордов')).toBeInTheDocument()
-    
+
     expect(screen.getByText('Вы')).toBeInTheDocument()
   })
 })

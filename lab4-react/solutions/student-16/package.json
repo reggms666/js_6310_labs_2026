@@ -1,7 +1,7 @@
 {
   "name": "student-16-lab4",
-  "version": "1.0.0",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "workspaces": [
     "ui-library",
